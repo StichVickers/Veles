@@ -9,7 +9,7 @@ const GetItem = () => {
     }, []);
 
     const fetchData = () => {
-        fetch('https://47d2d2b2-9213-4524-8742-3623d8b28ca7-00-13g7hrjz2b4c5.pike.replit.dev/comm')
+        fetch('https://df4f883b-ab50-48e8-aa24-232d75480713-00-39vy3qqtxmtfj.pike.replit.dev/comm')
             .then(response => response.json())
             .then(response => {
                 const formattedData = response.map(post => ({
@@ -26,7 +26,7 @@ const GetItem = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         
-        fetch('https://47d2d2b2-9213-4524-8742-3623d8b28ca7-00-13g7hrjz2b4c5.pike.replit.dev/comm', {
+        fetch('https://df4f883b-ab50-48e8-aa24-232d75480713-00-39vy3qqtxmtfj.pike.replit.dev/comm', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
