@@ -9,7 +9,7 @@ const GetItem = () => {
     }, []);
 
     const fetchData = () => {
-        fetch('https://df4f883b-ab50-48e8-aa24-232d75480713-00-39vy3qqtxmtfj.pike.replit.dev/comm')
+        fetch('https://2e729940-d5c2-43ba-99f6-6dfc37c589e0-00-17cduo2hpewm1.sisko.replit.dev/comm')
             .then(response => response.json())
             .then(response => {
                 const formattedData = response.map(post => ({
@@ -26,7 +26,7 @@ const GetItem = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         
-        fetch('https://df4f883b-ab50-48e8-aa24-232d75480713-00-39vy3qqtxmtfj.pike.replit.dev/comm', {
+        fetch('https://2e729940-d5c2-43ba-99f6-6dfc37c589e0-00-17cduo2hpewm1.sisko.replit.dev/comm', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
