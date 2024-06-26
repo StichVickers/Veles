@@ -1,0 +1,50 @@
+.MainText{
+    background-image: url('../assets/sistema-poliva-gazona9.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-left: 20%;
+    margin-right: 10%;
+    margin-top: 5%;
+    height: 50vh;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+} 
+.MainText #MainText_gold{
+    color: gold;
+}
+.MainText button{
+    color: rgb(220, 231, 225);
+    background-color: #199778;
+    font-size: 30px;
+    border-radius: 8rem;
+}
+.MainText #Main_h{
+    padding-top: 10%;
+}
+.footer{
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 50vh;
+}
+.footer #ul1{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    list-style: none;
+    gap: 50px;
+}
+@media (max-width: 1000px) {
+    .HomePage {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+  
+    .MainText {
+        flex-direction: column;
+        font-size: larger;
+        gap: 10px;
+    }
+  
+  }

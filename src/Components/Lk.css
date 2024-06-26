@@ -1,0 +1,79 @@
+ .profile-page {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+.glv{
+    width: 92vw;
+    margin-left: 5%;
+}
+.sidebar {
+    background-color: #e0e0e0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-decoration: none;
+}
+.sidebar a{
+    text-decoration: none;
+    color: black;
+}
+.menu-item {
+    cursor: pointer;
+}
+.content {
+    background-color: #f0f0f0;
+    padding: 40px;
+    position: relative;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 20vw;
+}
+
+.button-lk {
+    background-color: rgb(37, 156, 87);
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .profile-page {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .photo-placeholder {
+        display: none;
+    }
+}

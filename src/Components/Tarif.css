@@ -1,0 +1,19 @@
+.Tarif h2{
+    text-align: center;
+}
+.Tarif h3{
+    text-align: center;
+}
+.Tarif_text{
+    border:2px solid grey;
+    border-radius: 17px;
+    box-shadow: inset;
+    margin-left: 30%;
+    width: 40%;
+}
+.Tarif_text ul{
+    display: grid;
+    grid-template-columns: repeat(3,40%);
+    list-style: none;
+    gap: 20px;
+}

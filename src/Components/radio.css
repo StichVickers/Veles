@@ -1,0 +1,68 @@
+#form_radio {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+ #div_radio {
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  #radio_but {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  .checkbox-container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 0.1fr 1fr;
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-right: 0px;
+}
+
+.checkbox-container label {
+    font-size: 14px;
+    display: inline-block;
+    width: calc(100% - 30px);
+}
+
+.checkbox-container label a {
+    color: rgb(9, 207, 36);
+    text-decoration: none;
+}
+
+.checkbox-container label a:hover {
+    text-decoration: underline;
+}

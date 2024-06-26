@@ -1,0 +1,73 @@
+.Calc{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.Calc_Main{
+    margin-top: 1%;
+    border:2px solid grey;
+    border-radius: 17px;
+    box-shadow: inset;
+    margin-right: 1%;
+    margin-left: 2%;
+    height: 110%;
+}
+.Calc_Main .Calc_Main_1{
+    border:2px solid grey;
+    margin-left: 5%;
+    border-radius: 17px;
+    box-shadow: inset;
+    margin-right: 2%;
+    height: 80%;
+}
+.Calc_Main .Calc_Main_1 button{
+    margin-top: 3%;
+    margin-left: 3%;
+    color: rgb(220, 231, 225);
+    background-color: #199778;
+    font-size: 20px;
+    border-radius: 8rem;
+}
+.Calc_Main h3{
+    text-align: center;
+}
+.Calc_Main #p_main{
+    text-align: center;
+}
+.Calc_Main .types{
+    margin-left: 3%;
+    padding-top: 1%;
+}
+.Calc_Second{
+    margin-top: 1%;
+    margin-left: 10%;
+    border:2px solid grey;
+    border-radius: 17px;
+    box-shadow: inset;
+    width: 40%;
+    height: 120%;
+}
+.Calc_Second .Calc_Second_types{
+    display: grid;
+    border: 1px solid #199778;
+    border-radius: 17px;
+    width: 80%;
+    margin-left: 10%;
+    background-color:#199778;
+    padding-top: 3%;
+    margin-top: 8px;
+    margin-bottom: 5px;
+}
+.Calc_Second .Calc_Second_types h3{
+    text-align: center;
+}
+.Calc_Second .Calc_Second_types p{
+    text-align: center;
+}
+.Calc_Second button{
+    margin-top: 10%;
+    margin-left: 30%;
+    color: rgb(220, 231, 225);
+    background-color: #199778;
+    font-size: 30px;
+    border-radius: 8rem;
+}
