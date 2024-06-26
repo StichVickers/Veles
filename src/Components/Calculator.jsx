@@ -1,5 +1,6 @@
 import './Calculator.css';
 import React, { useState, useEffect } from "react";
+import { useHistory } from 'react-router-dom';
 function Calc() {
     const [area, setArea] = useState(0);
     const [systemType, setSystemType] = useState('');
@@ -11,6 +12,8 @@ function Calc() {
     const [dopCost, setDopCost] = useState(null);
     const [totalCost, setTotalCost] = useState(null);
 
+     const history = useHistory();
+    
     const handleCalculate = () => {
       const parseValue = (str) => {
         const parts = str.split(', ');
@@ -28,6 +31,11 @@ function Calc() {
       const total = download + dop;
       setTotalCost(total);
 
+const handleSave = () => {
+    history.push('/Profile', { totalCost });
+  };
+
+        
     };
     return (
         <div className='Calc'>
@@ -117,7 +125,7 @@ function Calc() {
                 <p>{totalCost} руб.</p>
                 </div>
                 )}
-                <button>Сохранить</button>
+                <button onClick={handleSave}>Сохранить</button>
             </div>
         </div>
 
