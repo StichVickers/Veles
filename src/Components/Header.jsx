@@ -67,6 +67,12 @@ function Header() {
                             <span>Комментарии</span>
                         </a>
                     </Link>
+                    <Link to="/Profile" className="item-link">
+                        <a href="#">
+                            <i className="fas fa-comments"></i>
+                            <span>Профиль</span>
+                        </a>
+                    </Link>
                     {isLoggedIn ? (
                         <button className='open-btn' onClick={handleLogout}>Выход</button>
                     ) : (
