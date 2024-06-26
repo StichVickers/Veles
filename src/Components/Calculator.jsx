@@ -120,7 +120,6 @@ function Calc() {
                 <p>{totalCost} руб.</p>
                 </div>
                 )}
-                <button>Сохранить</button>
             </div>
         </div>
 
