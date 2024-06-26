@@ -46,7 +46,7 @@ function Header() {
                     </div>
                 </Link>
                 <Link to="/Calc" className='calc'>
-                <button className="calc-button">Калькулятор(DEV)</button>
+                <button className="calc-button">Калькулятор</button>
                 </Link>
                 <div className="icon-links">
                     <Link to="/o_nas" className="item-link">
@@ -58,7 +58,7 @@ function Header() {
                     <Link to="/tarif" className="item-link">
                         <a href="#">
                             <i className="fas fa-address-book"></i>
-                            <span>Тариф(DEV)</span>
+                            <span>Тариф</span>
                         </a>
                     </Link>
                     <Link to="/Comm" className="item-link">
@@ -71,10 +71,10 @@ function Header() {
                         <button className='open-btn' onClick={handleLogout}>Выход</button>
                     ) : (
                         <div className="auth-links">
-                            <button className='open-btn' onClick={() => setModalActive(true)}>Регистрация(DEV)</button>
+                            <button className='open-btn' onClick={() => setModalActive(true)}>Регистрация</button>
                             <Modal active={modalActive} setActive={setModalActive} />
                             <span>/</span>
-                            <button className='open-btn' onClick={() => setModalActiveAuth(true)}>Вход(DEV)</button>
+                            <button className='open-btn' onClick={() => setModalActiveAuth(true)}>Вход</button>
                             <ModalAuth activeAuth={modalActiveAuth} setActiveAuth={setModalActiveAuth} onLogin={handleLogin} />
 
                         </div>
