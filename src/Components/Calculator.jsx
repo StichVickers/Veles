@@ -32,7 +32,7 @@ function Calc() {
       setTotalCost(total);
 
 const handleSave = () => {
-    navigate('/Profile', {state: { totalCost } });
+    navigate('/profile', { state: { totalCost} });
   };
 
         
