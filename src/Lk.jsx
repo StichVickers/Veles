@@ -9,8 +9,8 @@ function calc() {
     <>
       <Router>
       <Switch>
-        <Route path="/" exact component={Calculator} />
-        <Route path="/profile" component={Profile} />
+        <Route path="/Calc" exact component={Calculator} />
+        <Route path="/Profile" component={Profile} />
       </Switch>
     </Router>
       <Lk></Lk>
