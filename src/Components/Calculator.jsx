@@ -1,6 +1,6 @@
 import './Calculator.css';
 import React, { useState, useEffect } from "react";
-import { useHistory } from 'react-router';
+import { useNavigate } from 'react-router-dom';
 function Calc() {
     const [area, setArea] = useState(0);
     const [systemType, setSystemType] = useState('');
@@ -12,7 +12,7 @@ function Calc() {
     const [dopCost, setDopCost] = useState(null);
     const [totalCost, setTotalCost] = useState(null);
 
-     const history = useHistory();
+      const navigate = useNavigate();
     
     const handleCalculate = () => {
       const parseValue = (str) => {
@@ -32,7 +32,7 @@ function Calc() {
       setTotalCost(total);
 
 const handleSave = () => {
-    history.push('/Profile', { totalCost });
+    navigate('/Profile', {state: { totalCost } });
   };
 
         
