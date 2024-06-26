@@ -1,5 +1,5 @@
 import React, { useEffect,useState } from 'react'
-import {Route,Routes} from 'react-router-dom'
+import {BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import MainPage from './MainPage'
 import O_nas from './O_nas.jsx'
 import Calc from './Calculator'
