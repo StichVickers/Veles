@@ -11,7 +11,6 @@ function Calc() {
     const [downloadCost, setDownloadCost] = useState(null);
     const [dopCost, setDopCost] = useState(null);
     const [totalCost, setTotalCost] = useState(null);
-    const navigate = useNavigate();
     
     const handleCalculate = () => {
       const parseValue = (str) => {
@@ -30,9 +29,6 @@ function Calc() {
       const total = download + dop;
       setTotalCost(total);
 
-const HandleSave = () => {
-    navigate('/Profile', { state: { totalCost} });
-  };
 
         
     };
@@ -124,7 +120,7 @@ const HandleSave = () => {
                 <p>{totalCost} руб.</p>
                 </div>
                 )}
-                <button onClick={HandleSave}>Сохранить</button>
+                <button>Сохранить</button>
             </div>
         </div>
 
