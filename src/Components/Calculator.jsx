@@ -1,6 +1,6 @@
 import './Calculator.css';
 import React, { useState, useEffect } from "react";
-import { useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router';
 function Calc() {
     const [area, setArea] = useState(0);
     const [systemType, setSystemType] = useState('');
