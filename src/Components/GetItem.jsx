@@ -41,15 +41,14 @@ const GetItem = () => {
         })
         .then(response => {
             console.log('Post added:', response);
-            // After successful submission, update data
+
             fetchData();
-            // Clear the form
+ 
             setNewPost({ title: '', description: '' });
         })
         .catch(error => {
             console.error('Error adding post:', error);
-            // Display an error message to the user
-            // Implement your error handling strategy here
+
         });
     };
 
