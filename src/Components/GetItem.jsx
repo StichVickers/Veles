@@ -58,12 +58,12 @@ const GetItem = () => {
             <form onSubmit={handleSubmit}>
                 <input
                     type="text"
-                    placeholder="Title"
+                    placeholder="Заголовок отзыва"
                     value={newPost.title}
                     onChange={e => setNewPost({ ...newPost, title: e.target.value })}
                 />
                 <textarea
-                    placeholder="Description"
+                    placeholder="Описание"
                     value={newPost.description}
                     onChange={e => setNewPost({ ...newPost, description: e.target.value })}
                 />
